@@ -1,0 +1,14 @@
+.list-group {
+  .list-group-item {
+    background-color: transparent;
+
+     &.active {
+      background-color: rgba($navbar-background-color-theme, 0.9);
+      border-color: rgba($navbar-background-color-theme, 0.9);
+    }
+
+    &.sidebar-current {
+      background-color: rgba(255, 255, 255, 0.5) !important;
+    }
+  }
+}

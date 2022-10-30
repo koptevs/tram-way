@@ -1,0 +1,52 @@
+/*--------------------------------------------------------------
+# Breadcrumbs
+--------------------------------------------------------------*/
+.breadcrumbs {
+  padding-top: 15px;
+  padding-bottom: 5px;
+  margin-bottom: 0;
+  background: #f3f5fa;
+  min-height: 40px;
+  margin-top: 72px;
+
+  .page-breadcrumbs {
+    margin-left: calc(0.5 * var(--bs-gutter-x));
+  }
+}
+
+@media (max-width: 992px) {
+  .breadcrumbs {
+    margin-top: 68px;
+  }
+}
+
+.breadcrumbs h2 {
+  font-size: 28px;
+  font-weight: 600;
+  color: #37517e;
+}
+
+.breadcrumbs ol {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0 0 10px 0;
+  margin: 0;
+  font-size: 14px;
+}
+
+.breadcrumbs ol li + li {
+  padding-left: 10px;
+}
+
+.breadcrumbs ol li + li::before {
+  display: inline-block;
+  padding-right: 10px;
+  color: #4668a2;
+  content: "/";
+}
+
+.page--header {
+  background: #f3f5fa;
+  margin-top: -5px;
+}

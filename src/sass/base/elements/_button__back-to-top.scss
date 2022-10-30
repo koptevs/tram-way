@@ -1,0 +1,39 @@
+/*--------------------------------------------------------------
+base -> elements -> button_back_to_top
+--------------------------------------------------------------*/
+.back-to-top {
+  position: fixed;
+  visibility: hidden;
+  opacity: 0;
+  right: 20px;
+  bottom: 20px;
+  z-index: 996;
+  background: #47b2e4;
+  width: 45px;
+  height: 45px;
+  border-radius: 50px;
+  transition: all 0.4s;
+}
+
+.back-to-top svg {
+  line-height: 0;
+  width: 35px;
+  height: 35px;
+  fill: white;
+  transition: all 0.2s;
+
+  &:hover {
+    width: 45px;
+    height: 45px;
+  }
+}
+
+.back-to-top:hover {
+  background: #6bc1e9;
+  color: #fff;
+}
+
+.back-to-top.active {
+  visibility: visible;
+  opacity: 1;
+}

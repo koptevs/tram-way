@@ -1,0 +1,19 @@
+//https://getbootstrap.com/docs/5.0/utilities/api/
+$utilities: map-merge(
+                $utilities,
+                (
+                        "cursor": (
+                                property: cursor,
+                                class: iks,
+                                responsive: true,
+                                values: auto pointer grab,
+                        ),
+                        "cursor-hover": (
+                                property: cursor,
+                                class: iks,
+                                state: hover,
+                                responsive: true,
+                                values: auto pointer grab,
+                        )
+                )
+);

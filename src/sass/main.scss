@@ -1,0 +1,97 @@
+// ---------- Bootstrap site config -----------
+@import "../../node_modules/bootstrap/scss/mixins/banner";
+@include bsBanner("");
+
+
+// scss-docs-start import-stack
+// Configuration
+// https://getbootstrap.com/docs/5.0/customize/sass/
+// 1. Include functions first (so you can manipulate colors, SVGs, calc, etc)
+@import "../../node_modules/bootstrap/scss/functions";
+
+// 2. Include any default variable overrides here
+@import "./abstracts/variables";
+$body-bg: #efefef;
+$body-color: #3e3e3e;
+//$primary: #ff0000;
+
+// 3. Include remainder of required Bootstrap stylesheets
+@import "../../node_modules/bootstrap/scss/variables";
+
+// 4. Include any default map overrides here
+@import "./abstracts/maps";
+
+// 5. Include remainder of required parts
+@import "../../node_modules/bootstrap/scss/maps";
+@import "../../node_modules/bootstrap/scss/mixins";
+@import "../../node_modules/bootstrap/scss/root";
+
+
+@import "../../node_modules/bootstrap/scss/utilities";
+//https://getbootstrap.com/docs/5.0/utilities/api/
+@import "./abstracts/utilities";
+
+// 6. Optionally include any other parts as needed
+// Layout & components
+@import "../../node_modules/bootstrap/scss/reboot";
+@import "../../node_modules/bootstrap/scss/type";
+@import "../../node_modules/bootstrap/scss/images";
+@import "../../node_modules/bootstrap/scss/containers";
+@import "../../node_modules/bootstrap/scss/grid";
+@import "../../node_modules/bootstrap/scss/tables";
+@import "../../node_modules/bootstrap/scss/forms";
+@import "../../node_modules/bootstrap/scss/buttons";
+@import "../../node_modules/bootstrap/scss/transitions";
+@import "../../node_modules/bootstrap/scss/dropdown";
+@import "../../node_modules/bootstrap/scss/button-group";
+@import "../../node_modules/bootstrap/scss/nav";
+@import "../../node_modules/bootstrap/scss/navbar";
+@import "../../node_modules/bootstrap/scss/card";
+@import "../../node_modules/bootstrap/scss/accordion";
+@import "../../node_modules/bootstrap/scss/breadcrumb";
+@import "../../node_modules/bootstrap/scss/pagination";
+@import "../../node_modules/bootstrap/scss/badge";
+@import "../../node_modules/bootstrap/scss/alert";
+@import "../../node_modules/bootstrap/scss/progress";
+@import "../../node_modules/bootstrap/scss/list-group";
+@import "../../node_modules/bootstrap/scss/close";
+@import "../../node_modules/bootstrap/scss/toasts";
+@import "../../node_modules/bootstrap/scss/modal";
+@import "../../node_modules/bootstrap/scss/tooltip";
+@import "../../node_modules/bootstrap/scss/popover";
+@import "../../node_modules/bootstrap/scss/carousel";
+@import "../../node_modules/bootstrap/scss/spinners";
+@import "../../node_modules/bootstrap/scss/offcanvas";
+@import "../../node_modules/bootstrap/scss/placeholders";
+// Helpers
+@import "../../node_modules/bootstrap/scss/helpers";
+
+// 7. Optionally include utilities API last to generate classes based on the Sass map in `_utilities.scss`
+// Utilities
+@import "../../node_modules/bootstrap/scss/utilities/api";
+// scss-docs-end import-stack
+
+// 8. Add additional custom code here
+@import "./base";
+@import "./components";
+@import "./layout";
+@import "./vendors";
+@import "../../node_modules/font-awesome/scss/font-awesome";    // <-------- Font Awesome Icon font
+
+
+
+// ---------- Understrap config-----------
+//@import "theme/theme_variables";  // <-------- Add your variables into this file. Also add variables to overwrite Bootstrap or Understrap variables here
+//@import "assets/bootstrap/bootstrap";      // <-------- Loads Bootstrap
+//@import "theme/understrap";  // <-------- Loads the Understrap defaults. Just a few classes to incorporate BS in WP
+//@import "theme/colors";           // <-------- This creates the necessary bootstrap color classes.
+//@import "theme/blocks";           // <-------- This adds Bootstrap styles to blocks.
+//@import "theme/contact-form7";    // <-------- Contact Form 7 - Bootstrap 4 support
+//@import "theme/woocommerce"; // <-------- Loads WooCommerce style fixes. Comment out if you aren't using WooCommerce
+
+// Optional files - If you dont use the corresponding scripts/fonts comment em out
+//@import "assets/fontawesome/font-awesome";    // <-------- Font Awesome Icon font
+
+// Any additional imported files //
+//@import "theme/theme_custom_styles";            // <-------- That's where you can add your own design. Thats your part!
+

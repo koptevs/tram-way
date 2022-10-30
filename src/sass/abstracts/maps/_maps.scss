@@ -1,0 +1,10 @@
+// Create your own map
+$custom-colors: (
+  "iky": $iky,
+);
+
+// Merge the maps
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+//we use the primary, success, and danger keys from $theme-colors for links, buttons, and form states.
+// $theme-colors: map-remove($theme-colors, "info", "light", "dark");
